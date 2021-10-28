@@ -28,4 +28,3 @@ def PatternUnlock(N,hits = []):
         new_list_lenght.append( list_lenght[i])
     int_to_str = ''.join(new_list_lenght)
     return int_to_str
-print(PatternUnlock(3, [2,1,9]))
