@@ -8,7 +8,7 @@ def PatternUnlock(N,hits = []):
     lenght = 0
     for case1 in range(len(case)):
         if case[case1] in hits_string:
-            lenght = lenght + 1.41510
+            lenght = lenght + 1.41421
     for case2 in range(len(case_2)):
         if case_2[case2] in hits_string:
             lenght = lenght + 1
