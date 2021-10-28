@@ -13,7 +13,7 @@ def PatternUnlock(N,hits = []):
         if case_2[case2] in hits_string:
             lenght = lenght + 1
     for case in range(len(case_3)):
-        if case_2[case ] in hits_string:
+        if case_3[case ] in hits_string:
             lenght = lenght + 1
     for ind in range(N-1):
         if hits[ind+1] - hits[ind] <= 1 and hits[ind+1] - hits[ind] >= 0 :
@@ -33,5 +33,7 @@ def PatternUnlock(N,hits = []):
     else:
         for i in range(len(list_lenght)):
             new_list_lenght.append( list_lenght[i])
+    int_to_str = ''.join(new_list_lenght)
+    return int_to_str
     int_to_str = ''.join(new_list_lenght)
     return int_to_str
