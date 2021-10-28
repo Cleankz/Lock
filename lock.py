@@ -1,4 +1,3 @@
-
 def PatternUnlock(N,hits = []):
     case = ['15','51','26','62','18','81','29','92','27','72','38','83','24','42','53','35']
     case_2 = ['91','21','61','82','52','32','65','54','98','87','43','73']
@@ -9,7 +8,7 @@ def PatternUnlock(N,hits = []):
     lenght = 0
     for case1 in range(len(case)):
         if case[case1] in hits_string:
-            lenght = lenght + 1.40515
+            lenght = lenght + 1.41510
     for case2 in range(len(case_2)):
         if case_2[case2] in hits_string:
             lenght = lenght + 1
