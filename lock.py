@@ -8,7 +8,7 @@ def PatternUnlock(N,hits = []):
     lenght = 0
     for case1 in range(len(case)):
         if case[case1] in hits_string:
-            lenght = lenght + 1.41421
+            lenght = lenght + 1.414215
     for case2 in range(len(case_2)):
         if case_2[case2] in hits_string:
             lenght = lenght + 1
@@ -23,7 +23,15 @@ def PatternUnlock(N,hits = []):
     res_str_2 = res_str_1.replace('0', '')
     list_lenght = list(res_str_2)
     new_list_lenght = []
-    for i in range(len( list_lenght)):
-        new_list_lenght.append( list_lenght[i])
+    
+    if len(list_lenght) > 6:
+        for i in range(len(list_lenght)-1):
+            new_list_lenght.append( list_lenght[i])
+    elif len(list_lenght) >= 10:
+        for i in range(len(list_lenght)-2):
+            new_list_lenght.append( list_lenght[i])
+    else:
+        for i in range(len(list_lenght)):
+            new_list_lenght.append( list_lenght[i])
     int_to_str = ''.join(new_list_lenght)
     return int_to_str
